@@ -11,7 +11,7 @@ angular
       DailyViewService.fetch(date: date)
       .$promise
       .then (data) ->
-        $scope.myData = {
+        $scope.chartData = {
           labels: data.graph[0],
           datasets: [
             {

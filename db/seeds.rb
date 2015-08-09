@@ -8,7 +8,7 @@
 
 locations = Location.create([{ name: 'la-louvre'}, { name: 'MONA'}, {name: 'Museum of contemporary art'}, {name: 'The British Museum'}])
 
-100.times do
+20.times do
   (1..31).each do |date|
     Visit.create(
         [

@@ -7,7 +7,7 @@ angular
       HistogramViewService.fetch(start_date: $scope.start_date, end_date: $scope.end_date)
       .$promise
       .then (data) ->
-        $scope.myData = {
+        $scope.chartData = {
           labels: data.graph[0],
           datasets: [
             {
