@@ -9,7 +9,7 @@ And a histogram view of Number of vists against Signal strength.
 
 === Set up
 
-* Clone the repository and browse to project folder
+* Clone the repository and browse to the project folder
 
 * run bundle install
 
