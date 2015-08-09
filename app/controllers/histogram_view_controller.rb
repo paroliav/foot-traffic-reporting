@@ -7,11 +7,7 @@ class HistogramViewController < ApplicationController
     start_date = params[:start_date].to_i
     end_date = params[:end_date].to_i
 
-    visits = Visit
-    .where("start_time >= ? AND end_time <= ?",
-           DateTime.new(2015, 8, start_date, 0, 0, 0),
-           DateTime.new(2015, 8, end_date, 23, 59, 59))
-    .group(:signal).count
+    visits = Visit.histogram_view(start_date, end_date)
 
     graph = group_data(visits)
     render json: {graph: graph, start_date: start_date, end_date: end_date}.to_json
