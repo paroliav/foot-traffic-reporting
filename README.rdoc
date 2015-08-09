@@ -1,0 +1,34 @@
+== README
+
+This Foot traffic reporting is a Rails application which is based on locations and visits to the location.
+The visits are recorded as start time, /end time and signal strenth. The application aims to represent visit data
+in a graphical reprsentation as Graphs.
+
+It has a Daily view of number of visits plotted against time stamp for each day.
+And a histogram view of Number of vists against Signal strength.
+
+=== Set up
+
+* Clone the repository and browse to project folder
+
+* run bundle install
+
+* run rake db:migrate
+
+* run rake db:seed
+This takes few minutes, as it populates the database with randomly generated data in visits table.
+
+* start the server
+
+* The application should be up and ready to view visits as graphs.
+
+==== External Libraries used
+
+I have used AnjularJS as the front-end framework and Chart.js as the framework for Graphs
+I used tc-angular-chartjs to integrate Chart.js with Angular framework.
+
+The application can be easily switched to any other charting library. The application has required library of Chartist
+to replace Chart.js
+
+
+

@@ -1,0 +1,16 @@
+<div align="center" ng-app="footTrafficApp" ng-controller="HistogramViewController"><h3>Histogram view of Signal Strength</h3>
+
+  <p>Select a date range to see the histogram view</p>
+
+    <strong>Start Date:</strong><input type="text" name="start_date" id="start_date" ng-model="start_date" placeholder="dd">/Aug/2015
+    <strong>End Date:</strong> <input type="text" name="end_date" id="end_date" ng-model="end_date" placeholder="dd">/Aug/2015
+    <input type="button" ng-click="fetchHistogram()" value="Fetch Data">
+
+  <div ng-show="myData">
+    <canvas tc-chartjs-bar chart-data="myData" chart-options="myOptions" width="1150" height="350"></canvas>
+    <p>Number of visits Vs Signal Strength</p>
+  </div>
+
+
+
+</div>

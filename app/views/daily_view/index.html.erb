@@ -1,0 +1,22 @@
+<div align="center" width="80%" ng-app="footTrafficApp" ng-controller="DailyViewController"><h3>Daily view of Visits</h3>
+
+<p>Select a date of the month to see the daily view</p>
+
+  <h4>August 2015</h4>
+
+  <% (1..31).each do |date| %>
+        <span width="2%"> <a href="#" ng-click="daily_view_data(<%= date %>)"><%= date %></a>&nbsp;&nbsp; </span>
+          <% if date % 7 == 0 %>
+            <br/>
+          <%end%>
+  <% end %>
+
+
+  <div ng-show="myData">
+    <canvas tc-chartjs-line chart-data="myData" chart-options="myOptions" width="1150" height="350"></canvas>
+    <p>Number of visits Vs Time of day</p>
+  </div>
+
+
+
+</div>
