@@ -24,11 +24,11 @@ This takes few minutes, as it populates the database with randomly generated dat
 
 ==== External Libraries used
 
-I have used AnjularJS as the front-end framework and Chart.js as the framework for Graphs
-I used tc-angular-chartjs to integrate Chart.js with Angular framework.
+I have used AnjularJS as the front-end along with Chart.js framework for Graphs.
+tc-angular-chartjs is used for integration of Chart.js with Angular framework.
 
-The application can be easily switched to any other charting library. The application has required library of Chartist
-to replace Chart.js
+The application can be easily switched to any other charting library. 
+Chartist will assist in replacing Chart.js for another charting framework
 
 
 
