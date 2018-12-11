@@ -1,6 +1,6 @@
 == README
 
-This Foot traffic reporting is a Rails application which is based on locations and visits to the location.
+Foot traffic reporting is a Rails application which is based on locations and visits to the location.
 The visits are recorded as start time, /end time and signal strenth. The application aims to represent visit data
 in a graphical reprsentation as Graphs.
 
